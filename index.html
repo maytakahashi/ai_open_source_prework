@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMORPG Game Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="statusBar">
+        <div class="status-section">
+            <span class="status-label">🌍 World:</span>
+            <span id="worldInfo">Loading...</span>
+        </div>
+        <div class="status-section">
+            <span class="status-label">👥 Players:</span>
+            <span id="playerCount">0</span>
+        </div>
+        <div class="status-section">
+            <span class="status-label">📍 Position:</span>
+            <span id="playerPosition">(0, 0)</span>
+        </div>
+        <div class="status-section">
+            <span class="status-label">🔗 Status:</span>
+            <span id="connectionStatus">Connecting...</span>
+        </div>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
